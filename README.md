@@ -77,9 +77,9 @@ print(decoding_results.latin_decoded_text) #HELLO, WORLD!
 
 ## 📜 License
 
-Morsely is released under the Apache License.
+morsely is released under the Apache License.
 
 ---
 
-🔥 **Try Morsely today and make Morse code conversion effortless!** 🔥
+🔥 **Try morsely today and make Morse code conversion effortless!** 🔥
 
