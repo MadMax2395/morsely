@@ -42,7 +42,7 @@ coverage run -m pytest tests/ && coverage report -m
 ```
 pip install twine==6.1.0
 python setup.py sdist bdist_wheel
-pip install dist/pymorse-0.0.x-py3-none-any.whl
+pip install dist/morsely-0.0.x-py3-none-any.whl
 
 twine upload --repository testpypi dist/*
 twine upload dist/*
