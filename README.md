@@ -6,7 +6,7 @@ It also supports decoding `.wav` audio files containing Morse signals! 🎵↔�
 
 ## 📦 Installation
 
-Install Morsely directly from PyPI:
+Install Morsely directly from PyPI (https://pypi.org/project/morsely/):
 
 ```bash
 pip install morsely
@@ -69,6 +69,22 @@ decoding_results = decoder.decode_wav_file("morse_signal.wav")
 print(decoding_results.morse_decoded_text) #.... . .-.. .-.. --- --..-- / .-- --- .-. .-.. -.. -.-.--
 print(decoding_results.latin_decoded_text) #HELLO, WORLD!
 ```
+
+### ✨ Morsely in Production: the Telegram Bot
+The Morsely library is not just an open-source project: it also powers the Morsely Telegram Bot.
+
+The bot allows users to:
+
+Convert natural language text to Morse code and vice versa,
+
+Upload audio files containing Morse signals and automatically decode them,
+
+Generate audio files from text or Morse code.
+
+The core functionality of the bot relies entirely on morsely, demonstrating the library’s reliability, flexibility, and lightweight performance in real-world production environments.
+
+If you want to see Morsely in action, try the bot directly on Telegram:
+👉 https://t.me/MorselyBot
 
 ## 🛠️ Requirements
 
