@@ -54,4 +54,15 @@ class TestDecoder:
         assert results.morse_decoded_text == '-.-. .. .- ---'
         assert results.latin_decoded_text.casefold() == 'ciao'.casefold()
 
+    def test_decode_audio_recorded_multiple_word(self):
+        conf = MorseDecodingConfiguration()
+        decoder = MorseDecoder(conf)
+        morse_recorded_path = os.path.join(get_test_resources_folder(), 'morse_more_words_recorded.wav')
+        results = decoder.decode_wav_file(morse_recorded_path)
+        assert results is not None
+        assert results.morse_decoded_text is not None
+        assert results.latin_decoded_text is not None
+        assert results.morse_decoded_text == '.- .. ..- - .- - . -- .. / ... --- -. --- / ... --- .-.. --- / ... ..- / ..- -. .----. .. ... --- .-.. .-'
+        assert results.latin_decoded_text.casefold() == "aiutatemi sono solo su un'isola".casefold()
+
 
